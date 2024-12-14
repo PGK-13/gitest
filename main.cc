@@ -1,15 +1,8 @@
-#include "Producer.cc"
-#include "Consumer.cc"
-#include <thread>
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-    queue<int> queue;
-    Producer producer(queue);
-    Consumer consumer(queue);
-
-    thread t1(&Producer::run);
-    t1.join();
-    thread t2(&Consumer::run);
-    thread t3(&Consumer::run);
+    cout << "git test" << endl;
 }
